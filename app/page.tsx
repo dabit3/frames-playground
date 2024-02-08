@@ -9,7 +9,7 @@ const meta = {
   'hey:portal': 'vNext',
   'hey:portal:image': image,
   'hey:portal:button:1': 'Visit',
-  'hey:portal:button:1:action': 'link',
+  'hey:portal:button:1:type': 'link',
   'hey:portal:button:1:target': 'https://nader.codes',
 }
 
