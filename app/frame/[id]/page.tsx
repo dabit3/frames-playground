@@ -1,3 +1,4 @@
+export const runtime = 'edge'
 
 export default function Home() {
   return (
@@ -28,8 +29,8 @@ export async function generateMetadata({ params }) {
       images: [
         {
           url: image,
-          width: '400',
-          height: '400'
+          width: '1910',
+          height: '1000'
         }
       ]
     },

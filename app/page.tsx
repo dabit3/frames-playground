@@ -1,3 +1,4 @@
+export const runtime = 'edge'
 
 export default function Home() {
   return (
@@ -8,7 +9,6 @@ export default function Home() {
 }
 
 export async function generateMetadata({ params }) {
-  console.log('params', params)
   const image = "https://i.imgur.com/E5e7907.png"
 
   const meta = {
@@ -29,8 +29,8 @@ export async function generateMetadata({ params }) {
       images: [
         {
           url: image,
-          width: '400',
-          height: '400'
+          width: '1910',
+          height: '1000'
         }
       ]
     },
