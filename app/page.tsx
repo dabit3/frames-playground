@@ -1,5 +1,3 @@
-import Image from 'next/image'
-
 export const runtime = 'edge'
 
 const image = "https://i.imgur.com/E5e7907.png"
@@ -32,9 +30,16 @@ export async function generateMetadata({ params }) {
   const meta = {
     'fc:frame': 'vNext',
     'fc:frame:image': image,
+
     'fc:frame:button:1': buttonText,
     'fc:frame:button:1:action': 'link',
     'fc:frame:button:1:target': link,
+    
+    'fc:frame:post_url': 'http://localhost:3002/target',
+    'fc:frame:button:2': 'NDT',
+    'fc:frame:button:2:action': 'post',
+    // 'fc:frame:button:2:target':'http://localhost:3002/target',
+
     'hey:portal': 'vNext',
     'hey:portal:image': image,
     'hey:portal:button:1': buttonText,
