@@ -8,7 +8,6 @@ export default function Home() {
 }
 
 export async function generateMetadata({ params }) {
-  console.log('params', params)
   const image = "https://i.imgur.com/E5e7907.png"
 
   const meta = {
@@ -20,7 +19,7 @@ export async function generateMetadata({ params }) {
     'hey:portal': 'vNext',
     'hey:portal:image': image,
     'hey:portal:button:1': 'Visit',
-    'hey:portal:button:1:type': 'redirect',
+    'hey:portal:button:1:type': 'link',
     'hey:portal:button:1:target': 'https://nader.codes',
   }
 
