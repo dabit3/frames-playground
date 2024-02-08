@@ -1,6 +1,3 @@
-import Image from "next/image";
-import Head from 'next/head'
-
 const image = "https://i.imgur.com/E5e7907.png"
 
 const meta = {
@@ -20,6 +17,7 @@ export const metadata = {
   openGraph: {
     images: [
       {
+        url: image,
         width: '400',
         height: '400'
       }
@@ -32,8 +30,8 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      
-    </main>
+    <div>
+      <h1>Hello world.</h1>
+    </div>
   );
 }
