@@ -35,7 +35,7 @@ export async function generateMetadata({ params }) {
     'fc:frame:button:1:action': 'link',
     'fc:frame:button:1:target': link,
     
-    'fc:frame:post_url': 'http://localhost:3002/target',
+    'fc:frame:post_url': 'https://frames-playground-three.vercel.app/target',
     'fc:frame:button:2': 'NDT',
     'fc:frame:button:2:action': 'post',
     // 'fc:frame:button:2:target':'http://localhost:3002/target',
