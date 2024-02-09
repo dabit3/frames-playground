@@ -1,0 +1,1 @@
+export const ENVIRONMENT = process.env.ENV === 'local' ? 'local' : 'production';

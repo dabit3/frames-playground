@@ -4,6 +4,14 @@ const image = "https://i.imgur.com/E5e7907.png"
 const link = 'https://nader.codes'
 const buttonText = 'Visit'
 
+import { ENVIRONMENT } from '../constants'
+
+let URL = 'https://frames-playground-three.vercel.app'
+
+if (ENVIRONMENT === 'local') {
+  URL = 'http://localhost:3002'
+}
+
 export default function Home() {
   return (
     <div>
@@ -35,10 +43,9 @@ export async function generateMetadata({ params }) {
     'fc:frame:button:1:action': 'link',
     'fc:frame:button:1:target': link,
     
-    'fc:frame:post_url': 'https://frames-playground-three.vercel.app/target',
+    'fc:frame:post_url': `${URL}/target`,
     'fc:frame:button:2': 'NDT',
     'fc:frame:button:2:action': 'post',
-    // 'fc:frame:button:2:target':'http://localhost:3002/target',
 
     'hey:portal': 'vNext',
     'hey:portal:image': image,

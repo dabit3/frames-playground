@@ -1,11 +1,8 @@
 import { NextResponse } from 'next/server'
 const image = "https://i.imgur.com/g6z3BFn.png"
 
-//
-
 export async function POST(req) {
   const data = await req.json()
-  console.log('data:', data)
   return new NextResponse(
     `
     <!DOCTYPE html>
